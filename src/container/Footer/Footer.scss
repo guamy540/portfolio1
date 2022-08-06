@@ -58,11 +58,11 @@
     }
   }
   
-  .app__footer-cards .app__footer-card:last-child {
+  .app__footer-cards .app__footer-card {
     background-color: #f2f7fb;
   }
   
-  .app__footer-cards .app__footer-card:last-child:hover {
+  .app__footer-cards .app__footer-card:hover {
     box-shadow: 0 0 25px #f2f7fb;
   }
   
@@ -126,5 +126,29 @@
     @media screen and (max-width: 768px) {
       width: 100%;
       margin: 1rem 0;
+    }
+  }
+
+  .app_footer-icon{
+    margin-right: 1rem;
+  }
+
+  .contact__message {
+    font-size: 2.75rem;
+    font-weight: 800;
+    text-align: center;
+    color: var(--black-color);
+    text-transform: capitalize;
+    color: #2430af;
+    span {
+      color: var(--secondary-color);
+    }
+  
+    @media screen and (min-width: 2000px) {
+      font-size: 4rem;
+    }
+  
+    @media screen and (max-width: 450px) {
+      font-size: 2rem;
     }
   }

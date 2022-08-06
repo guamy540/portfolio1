@@ -19,7 +19,10 @@
     display: flex;
     justify-content: flex-start;
     align-items: center;
-  
+    background-color: var(--secondary-color);
+    padding:1rem;
+    border-radius: 1rem;
+    box-shadow: 10px 10px #313bac84;
     img {
       width: 110px;
   
@@ -169,4 +172,8 @@
     @media screen and (min-width: 900px) {
       display: none;
     }
+  }
+
+  .app__logo{
+    color: white;
   }

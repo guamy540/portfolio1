@@ -1,5 +1,5 @@
 import React, { useState } from 'react';
-
+import {MdEmail, MdPhone} from 'react-icons/md'
 import { email, mobile } from '../../assets';
 import { AppWrap, MotionWrap } from '../../wrapper';
 import { client } from '../../client';
@@ -37,15 +37,16 @@ const Footer = () => {
 
   return (
     <>
-      <h2 className="head-text">Take a coffee & chat with me</h2>
+      <h2 className="head-text">Contact</h2>
+      
 
       <div className="app__footer-cards">
         <div className="app__footer-card ">
-          <img src={email} alt="email" />
+          <MdEmail className='app_footer-icon' size={28} color="#313bac"/>
           <a href="mailto: ryantenoriohigh@gmail.com" className="p-text">ryantenoriohigh@gmail</a>
         </div>
         <div className="app__footer-card">
-          <img src={mobile} alt="phone" />
+          <MdPhone className='app_footer-icon' size={28} color="#313bac" />
           <a href="tel:425-829-5551" className="p-text">(425)-829-5551</a>
         </div>
       </div>
@@ -69,11 +70,11 @@ const Footer = () => {
           <button type="button" className="p-text" onClick={handleSubmit}>{!loading ? 'Send Message' : 'Sending...'}</button>
         </div>
       ) : (
-        <div>
-          <h3 className="head-text">
+        <>
+          <h3 className="contact__message" >
             Thank you for getting in touch!
           </h3>
-        </div>
+        </>
       )}
     </>
   );

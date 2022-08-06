@@ -1,4 +1,5 @@
-export default {
+export default 
+{
     name: 'works',
     title: 'Works',
     type: 'document',
@@ -32,7 +33,6 @@ export default {
           hotspot: true,
         },
       },
-   
       {
         name: 'tags',
         title: 'Tags',
@@ -43,7 +43,21 @@ export default {
            title:'Tag',
            type:'string'
          }
-       ]
+       ],
       },
+      {
+        name: 'priority',
+        title: 'Priority',
+        type: 'number',
+      }
     ],
-  };
+    orderings: [
+      {
+        title: 'Priority, New',
+        name: 'priorityNew',
+        by: [
+          {field: 'priority', direction: 'asc'}
+        ]
+      }
+    ]
+};
