@@ -43,11 +43,7 @@ const Footer = () => {
       <div className="app__footer-cards">
         <div className="app__footer-card ">
           <MdEmail className='app_footer-icon' size={28} color="#313bac"/>
-          <a href="mailto: ryantenoriohigh@gmail.com" className="p-text">ryantenoriohigh@gmail</a>
-        </div>
-        <div className="app__footer-card">
-          <MdPhone className='app_footer-icon' size={28} color="#313bac" />
-          <a href="tel:425-829-5551" className="p-text">(425)-829-5551</a>
+          <a href="mailto: contactsitesbyryan@gmail.com" className="p-text">contactsitesbyryan@gmail</a>
         </div>
       </div>
       {!isFormSubmitted ? (
