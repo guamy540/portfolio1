@@ -37,8 +37,6 @@ const Skills = () => {
               key={skill.name}
               whileHover={{ 
                 scale: 1.5, 
-                textShadow: "0px 0px 8px rgb(255,255,255)",
-                boxShadow: "0px 0px 8px rgb(255,255,255)",
               }}
             >
               <div
