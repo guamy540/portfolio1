@@ -3,6 +3,13 @@
     font-family: var(--font-base);
   }
   
+  .app__bgMarble{
+    background: url(./assets/images/marbleBG.jpg);
+    background-position: center;
+    background-size: cover;
+    background-attachment: fixed;
+  }
+
   .app__whitebg {
     background-color: var(--white-color);
   }
@@ -76,6 +83,7 @@
     text-align: left;
     color: var(--gray-color);
     line-height: 1.5;
+    z-index: 4;
   
     @media screen and (min-width: 2000px) {
       font-size: 1.75rem;
