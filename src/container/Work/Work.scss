@@ -3,7 +3,46 @@
     width: 100%;
     flex-direction: column;
   }
-  
+
+
+  .app__work__mobileicons{
+    display: flex;
+    width: 100%;
+    justify-content: space-between;
+    margin-top: 8px;
+  }
+
+  .app__work__eye__container{
+    display: flex;
+    flex-direction: column;
+  }
+
+  .app__work__git__container{
+    display: flex;
+    flex-direction: column;
+  }
+
+  .app__work__eye{
+    display: flex;
+    width: 100%;;
+    justify-content: flex-end;
+  }
+
+  .app__work__git{
+    display: flex;
+    width: 100%;;
+    justify-content: flex-end;
+  }
+
+  .app__work__eye{
+    justify-content: start;
+  }
+
+  .app__work__git__container{
+    justify-content: flex-end;
+  }
+
+
   .app__work-filter {
     display: flex;
     flex-direction: row;
