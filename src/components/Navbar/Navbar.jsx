@@ -30,7 +30,7 @@ const Navbar = () => {
         <HiMenuAlt4 onClick={() => setToggle(true)} />
 
         {toggle && (
-          <motion.div
+          <motion.div className='mobile-menu-container'
             whileInView={{ x: [300, 0] }}
             transition={{ duration: 0.85, ease: 'easeOut' }}
           >

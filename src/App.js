@@ -6,7 +6,7 @@ import './App.scss';
 
 const App = () => (
   <div className="app">
-    <Navbar />
+    <Navbar className='navbar_index' />
     <About/>
     <Work/>
     <Skills/>
