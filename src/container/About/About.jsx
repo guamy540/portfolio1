@@ -18,16 +18,24 @@ const scaleVariants = {
 
 const About = () => (
   <div className="app__header app__flex ">
+
     <motion.div
       whileInView={{ x: [-100, 0], opacity: [0, 1] }}
       transition={{ duration: 0.5 }}
       className="app__header-info"
     >
-      <h2 className="head-text">About Me</h2>
-      <p>I am a freelance web developer. I make intuitive user experiences and dynamic websites that look great on every device. I've worked with local businesses and artists 
-        bring their visions to life. My websites are responsive and utilize the latest innovations. I continue to learn
-        daily and am currently studying software development.
-      </p>
+      <div className='app__header-container1'>
+        <h2 className="head-text">About Me</h2>
+        <p>I am a web developer and designer who believes:</p>
+      </div>
+      
+      <div className='belief__container'>
+        <p><span className='list_emphasis'>Smart design</span> </p>
+        <p>leads to</p>
+        <p><span className='list_emphasis'>memorable experiences</span></p>
+        <p>resulting in </p> 
+        <p><span className='list_emphasis'>more sales!</span></p>
+      </div>
     </motion.div>
 
     <motion.div

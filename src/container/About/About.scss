@@ -34,6 +34,20 @@
     box-shadow: 2px 2px 20px rgba(6, 5, 5, 0.353);
     border-radius: 2rem;
     padding: 2rem;
+
+    .app__header-container1{
+      text-align: center;
+      margin-bottom: 1rem;
+    }
+
+    .app__header-list{
+      list-style: none;
+
+
+      
+    }
+
+    
   
     @media screen and (min-width: 1200px) {
       width: 100%;
@@ -184,4 +198,14 @@
     }
   }
 
-  
+.belief__container{
+  text-align: center;
+  font-weight: 400;
+  font-size: larger;
+}
+
+.list_emphasis{
+  color: darkblue;
+  font-weight: 900;
+  font-size: x-large;
+}
