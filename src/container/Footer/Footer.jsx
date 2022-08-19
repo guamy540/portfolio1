@@ -60,7 +60,7 @@ const Footer = () => {
       <div className="app__footer-cards">
         <div className="app__footer-card ">
           <MdEmail className='app_footer-icon' size={28} color="#313bac"/>
-          <a href="mailto: contactsitesbyryan@gmail.com" className="p-text">contactsitesbyryan@gmail</a>
+          <p className="p-text">contactsitesbyryan@gmail</p>
         </div>
       </div>
       {!isFormSubmitted ? (
