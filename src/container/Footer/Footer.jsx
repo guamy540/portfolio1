@@ -1,5 +1,6 @@
-import React, { useState } from 'react';
+import React, { useState, useRef } from 'react';
 import {MdEmail, MdPhone} from 'react-icons/md'
+import emailjs from '@emailjs/browser'
 import { email, mobile } from '../../assets';
 import { AppWrap, MotionWrap } from '../../wrapper';
 import { client } from '../../client';
@@ -35,6 +36,23 @@ const Footer = () => {
       .catch((err) => console.log(err));
   };
 
+  const form = useRef();
+
+  const sendEmail = (e) => {
+    e.preventDefault();
+
+    emailjs.sendForm('service_rdoi95r', 'template_73jm645', form.current, 'dcF86sVQDcg-rCBo-')
+      .then((result) => {
+          console.log(result.text);
+          setIsFormSubmitted(true)
+      }, (error) => {
+          console.log(error.text);
+      });
+    
+
+  };
+
+  
   return (
     <>
     <h2 className="head-text">Contact</h2>
@@ -46,12 +64,15 @@ const Footer = () => {
         </div>
       </div>
       {!isFormSubmitted ? (
+        
+
         <div className="app__footer-form app__flex">
+        <form className="app__footer-form app__flex" ref={form} onSubmit={sendEmail}>
           <div className="app__flex">
-            <input className="p-text" type="text" placeholder="Your Name" name="username" value={username} onChange={handleChangeInput} />
+          <input className="p-text" type="name" placeholder="Your Name" name="user_name"  />
           </div>
-          <div className="app__flex">
-            <input className="p-text" type="email" placeholder="Your Email" name="email" value={email} onChange={handleChangeInput} />
+          <div className='app__flex'>
+          <input className="p-text" type="email" placeholder="Your Email" name="user_email" />
           </div>
           <div>
             <textarea
@@ -62,7 +83,8 @@ const Footer = () => {
               onChange={handleChangeInput}
             />
           </div>
-          <button type="button" className="p-text" onClick={handleSubmit}>{!loading ? 'Send Message' : 'Sending...'}</button>
+          <input classname='submit__button' type="submit" value="Send" />
+        </form>
         </div>
       ) : (
         <>

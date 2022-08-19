@@ -1,9 +1,10 @@
 {
   "name": "personal_portfolio_one",
-  "author" : "Ryan High <contactsitesbyryan@gmail.com> (http://sitesbyryan.com/)",
+  "author": "Ryan High <contactsitesbyryan@gmail.com> (http://sitesbyryan.com/)",
   "version": "0.1.0",
   "private": true,
   "dependencies": {
+    "@emailjs/browser": "^3.6.2",
     "@sanity/client": "^3.3.3",
     "@sanity/image-url": "^1.0.1",
     "@testing-library/jest-dom": "^5.16.4",
