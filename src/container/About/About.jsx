@@ -26,7 +26,7 @@ const About = () => (
     >
       <div className='app__header-container1'>
         <h2 className="head-text">About Me</h2>
-        <p>I am a web developer and designer who believes:</p>
+        <p>I am a software developer and designer who believes:</p>
       </div>
       
       <div className='belief__container'>
