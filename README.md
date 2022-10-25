@@ -1,4 +1,5 @@
 Author: Ryan High
+
 README last edited: 10/24/2022
 
 I originally designed this project to be advertise my services as a web developr to local businesses. I've since repurposed it to function as a personal site to advertise myself as a full stack software developer as I apply to internships. 
