@@ -117,9 +117,7 @@
       justify-content: flex-end;
       align-items: flex-end;
       flex-direction: column;
-      
-      background: url('../../assets/images/bgWhite.png');
-      background-color: var(--white-color);
+      background-color: var(--gray-color);
       background-size: cover;
       background-repeat: repeat;
   
@@ -154,11 +152,12 @@
             font-size: 1rem;
             text-transform: uppercase;
             font-weight: 500;
-  
+            color: white;
             transition: all 0.3s ease-in-out;
   
             &:hover {
               color: var(--secondary-color);
+              cursor: pointer;
             }
           }
         }

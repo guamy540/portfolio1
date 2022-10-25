@@ -11,4 +11,4 @@ Additional packages/libraries include react-icons, EmailJS to handle sending ema
 
 TO RUN THIS APP:
 You can see the hosted version of this site at https://www.sitesbyryan.com/
-Alternatively, you can have Node.js installed on your PC, make sure you are in the project directory (the same directory as that containing the src folder) and run 'npm install' in the terminal. Once npm install is finished, you can run the site via the command 'npm start'. You should then have a browser open up at localhost:3000. 
+Alternatively, make sure you have Node.js installed on your PC, make sure you are in the project directory (the same directory as that containing the src folder) and run 'npm install' in the terminal. You can then run the site via the command 'npm start'. You should then have a browser open up at localhost:3000. 
