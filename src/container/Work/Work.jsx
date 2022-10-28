@@ -42,7 +42,7 @@ const Work = () => {
       <h2 className="head-text">My Creative <span>Portfolio</span> Section</h2>
 
       <div className="app__work-filter">
-        {[ 'All', 'Shops', 'UI/UX', 'Professional Portfolios'].map((item, index) => (
+        {[ 'All', 'Shops', 'UI/UX', 'Professional Portfolios', 'Games'].map((item, index) => (
           <div
             key={index}
             onClick={() => handleWorkFilter(item)}
@@ -81,6 +81,7 @@ const Work = () => {
                     <AiFillEye />
                   </motion.div>
                 </a>
+              { work.codeLink !== 'none' ?
                 <a href={work.codeLink} target="_blank" rel="noreferrer">
                   <motion.div
                     whileInView={{ scale: [0, 1] }}
@@ -90,10 +91,11 @@ const Work = () => {
                   >
                     <AiFillGithub />
                   </motion.div>
-                </a>
+                </a> : <></>
+              }
               </motion.div>
-            </div>
-
+            </div>  
+            
             <div className="app__work-content app__flex">
               <h4 className="bold-text">{work.title}</h4>
               <p className="p-text" style={{ marginTop: 10 }}>{work.description}</p>
@@ -111,6 +113,10 @@ const Work = () => {
                     <p>View Site</p>
                   </a>
                 </motion.div>
+
+                {/*Github right corner link*/}
+
+                {work.codeLink !== 'none' ? 
                 <motion.div
                 whileHover={{scale: 1.5}}
                 className='app__work__git__container'>
@@ -118,7 +124,8 @@ const Work = () => {
                     <AiFillGithub className='app__work__git' fontSize={36}/>
                     <p>View Git</p>
                   </a>
-                </motion.div>
+                </motion.div> : <></>
+                }
               </div>
             </div>
           </div>
